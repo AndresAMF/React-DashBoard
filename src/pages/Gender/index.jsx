@@ -30,7 +30,7 @@ function Metrics(props) {
   const totalSetGender = genderDataSet.map((data) => data.totalCount);
 
   //Se setea como valor iniciar de genderData con la data necesaria para el gráfico
-  const [genderData, setGenderData] = useState({
+  const [genderData] = useState({
     labels: genderSet,
     datasets: [
       {

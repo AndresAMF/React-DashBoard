@@ -30,7 +30,7 @@ function Metrics(props) {
   const totalSetCountry = nationalityDataSet.map((data) => data.totalCount);
 
   //Se setea como valor iniciar de countryData con la data necesaria para el gráfico
-  const [countryData, setCountryData] = useState({
+  const [countryData] = useState({
     labels: countrySet,
     datasets: [
       {

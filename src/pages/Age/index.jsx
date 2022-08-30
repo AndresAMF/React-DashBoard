@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import BarChart from "../../components/BarChart";
-import PieChart from "../../components/PieChart";
-import PolarChart from "../../components/PolarChart";
 import "./styles.css";
 
 function Metrics(props) {
@@ -30,7 +28,7 @@ function Metrics(props) {
   const totalSetAge = ageDataSet.map((data) => data.totalCount);
 
   //Se setea como valor iniciar de ageData con la data necesaria para el gráfico
-  const [ageData, setAgeData] = useState({
+  const [ageData] = useState({
     labels: ageSet,
     datasets: [
       {
