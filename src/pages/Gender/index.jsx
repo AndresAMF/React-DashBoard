@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import PieChart from "../../components/PieChart";
 
 import "./styles.css";
