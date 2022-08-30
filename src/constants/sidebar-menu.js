@@ -13,7 +13,7 @@ const sidebar_menu = [
         id: 2,
         icon: Bars,
         path: '/gender',
-        title: 'Gender chart',
+        title: 'Gender Chart',
     },
     {
         id: 3,

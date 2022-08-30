@@ -32,7 +32,7 @@ function Metrics(props) {
     labels: ageSet,
     datasets: [
       {
-        label: "Age",
+        label: "Amount",
         data: totalSetAge,
         backgroundColor: [
           "#9CA6D9",
