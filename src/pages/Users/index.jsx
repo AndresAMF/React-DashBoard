@@ -29,8 +29,8 @@ export default function Users(props) {
         (item) =>
           item.name.first.toLowerCase().includes(search.toLowerCase()) ||
           item.name.last.toLowerCase().includes(search.toLowerCase()) ||
-          item.gender.toLowerCase() === search ||
-          item.location.country.toLowerCase() === search
+          item.gender.toLowerCase() === search.toLocaleLowerCase() ||
+          item.location.country.toLowerCase() === search.toLocaleLowerCase()
       );
 
       setUsers(search_results.slice(itemOffset, endOffset));
