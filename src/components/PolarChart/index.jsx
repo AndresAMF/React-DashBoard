@@ -1,13 +1,13 @@
-import React from 'react'
-import { PolarArea} from 'react-chartjs-2'
-import { Chart as ChartJS} from 'chart.js/auto'
+import React from "react";
+import { PolarArea } from "react-chartjs-2";
+import { Chart as ChartJS } from "chart.js/auto";
 
-function PolarChart({chartData}) {
+function PolarChart({ chartData }) {
   return (
-    <div style={{width: 700}}>
-        <PolarArea data={chartData} />
+    <div>
+      <PolarArea className="polar-chart" data={chartData} />
     </div>
-  )
+  );
 }
 
-export default PolarChart
+export default PolarChart;

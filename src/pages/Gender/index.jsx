@@ -15,7 +15,7 @@ function Metrics(props) {
       genderObj[item.gender] += 1;
     }
   }
-  //Se arma el array de datos que se usará para el gráfico
+  //Se arma el array de datos que se usará para el gráfico iterando el objeto genderObj
   const genderDataSet = [];
 
   for (let i = 0; i <= Object.entries(genderObj).length; i++) {
@@ -41,7 +41,7 @@ function Metrics(props) {
   });
 
   return (
-    <div className="chartCointaner">
+    <div className="chart-gender-container">
       <h1>Gender Chart</h1>
       <PieChart chartData={genderData} />
     </div>

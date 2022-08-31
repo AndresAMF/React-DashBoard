@@ -1,10 +1,18 @@
 .dashboard-container {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 .dashboard-body {
-    flex: 1;
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f2f5;
+  width: 100%;
+}
+
+/* Ajusta contenido para responsividad */
+@media (max-width: 500px) {
+  .dashboard-container {
     flex-direction: column;
-    background-color: #F0F2F5;
+    margin-top: 10em;
+  }
 }

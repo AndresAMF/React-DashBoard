@@ -14,7 +14,7 @@ function Metrics(props) {
       ageObj[item.dob.age] += 1;
     }
   }
-  //Se arma el array de datos que se usará para el gráfico
+  //Se arma el array de datos que se usará para el gráfico se itera el objeto ageObj
   const ageDataSet = [];
 
   for (let i = 0; i <= Object.entries(ageObj).length; i++) {
@@ -55,14 +55,14 @@ function Metrics(props) {
           "#050845",
           "#330067",
           "#4C2881",
-          "#624297"
+          "#624297",
         ],
       },
     ],
   });
 
   return (
-    <div className="chartCointaner">
+    <div className="chart-age-container">
       <h1>Age Chart</h1>
       <BarChart chartData={ageData} />
     </div>

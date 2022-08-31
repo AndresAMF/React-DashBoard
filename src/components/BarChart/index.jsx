@@ -1,11 +1,13 @@
-import React from 'react'
-import { Bar} from 'react-chartjs-2'
-import { Chart as ChartJS} from 'chart.js/auto'
+import React from "react";
+import { Bar } from "react-chartjs-2";
+import { Chart as ChartJS } from "chart.js/auto";
 
-function BarChart({chartData}) {
+function BarChart({ chartData }) {
   return (
-    <div><Bar style={{width: 1000}} data={chartData}/></div>
-  )
+    <div>
+      <Bar className="bar-chart" data={chartData} />
+    </div>
+  );
 }
 
-export default BarChart
+export default BarChart;

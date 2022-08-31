@@ -15,7 +15,7 @@ function Metrics(props) {
       nationalityObj[item.location.country] += 1;
     }
   }
-  //Se arma el array de datos que se usará para el gráfico
+  //Se arma el array de datos que se usará para el gráfico iterando el objeto nationalityObj
   const nationalityDataSet = [];
 
   for (let i = 0; i <= Object.entries(nationalityObj).length; i++) {
@@ -56,15 +56,14 @@ function Metrics(props) {
           "#050845",
           "#330067",
           "#4C2881",
-          "#624297"
-
+          "#624297",
         ],
       },
     ],
   });
 
   return (
-    <div className="chartCointaner">
+    <div className="chart-country-container">
       <h1>Country Chart</h1>
       <PolarChart chartData={countryData} />
     </div>

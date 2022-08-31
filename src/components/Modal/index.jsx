@@ -10,6 +10,7 @@ import {
 import "./styles.css";
 
 function More({
+  // Se reciben los datos por props
   name,
   location,
   picture,
@@ -19,24 +20,24 @@ function More({
   cell,
   registered,
 }) {
+  // Estados para el funcionamiento del modal
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  // Se formatea fecha de registro para eliminar data innecesaria
   const cleanedDate = new Date(registered.date).toLocaleDateString();
-  const mailTo = 'mailto:'+email
+  // Se crea string para enviar mail
+  const mailTo = "mailto:" + email;
 
-    
-
-  
   return (
     <>
-      <Button className="button-info"  onClick={handleShow}>
+      <Button className="button-info" onClick={handleShow}>
         More Info
       </Button>
 
-      <Modal  show={show} onHide={handleClose}>
-        <Modal.Header  className="modal-header">
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header className="modal-header">
           <Modal.Title>
             {name.title + ". " + name.first + " " + name.last + " " + age.age}
           </Modal.Title>
@@ -83,7 +84,11 @@ function More({
         <Modal.Footer className="modal-footer">
           <div className="register-date">Joined: {cleanedDate}</div>
           <div className="buttons">
-            <Button className="button-close" variant="secondary" onClick={handleClose}>
+            <Button
+              className="button-close"
+              variant="secondary"
+              onClick={handleClose}
+            >
               Close
             </Button>
             <Button className="button-close" variant="secondary" href={mailTo}>

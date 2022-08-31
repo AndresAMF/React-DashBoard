@@ -1,9 +1,25 @@
-.chartCointaner{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.chart-age-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding-top: 1.5em;
+  min-width: 500px;
 }
-h1{
-    color: #262a41;
+h1 {
+  color: #262a41;
+}
+.bar-chart {
+  width: 1000px;
+}
+
+@media (max-width: 500px) {
+  .bar-chart {
+    width: 500px;
+  }
+  .chart-age-container {
+    padding-top: 2em;
+    padding-bottom: 35%;
+  }
 }

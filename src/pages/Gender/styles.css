@@ -1,9 +1,25 @@
-.chartCointaner{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.chart-gender-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding-top: 1.5em;
+  min-width: 500px;
 }
-h1{
-    color: #262a41;
+h1 {
+  color: #262a41;
+}
+.pie-chart {
+  width: 600px;
+}
+
+@media (max-width: 500px) {
+  .pie-chart {
+    width: 350px;
+  }
+  .chart-gender-container {
+    padding-top: 2em;
+    padding-bottom: 20%;
+  }
 }
