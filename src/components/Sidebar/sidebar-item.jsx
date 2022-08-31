@@ -7,6 +7,7 @@ const SideBarItem = ({ item, active }) => {
   return (
     <Link
       to={item.path}
+      // Consulta si el item está activo y hace el cambio de clase
       className={active ? "sidebar-item-active" : "sidebar-item"}
     >
       <img
