@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { fetchUrl } from "./utils/Api-conecction";
+import { fetchUrl } from "./api/Api-conecction";
 
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
