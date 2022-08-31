@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ReactPaginate from "react-paginate";
 import Modal from "../../components/Modal";
+import Spinner from 'react-bootstrap/Spinner';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
@@ -117,7 +118,10 @@ export default function Users(props) {
               </div>
             ))}
           </div>
-        ) : null}
+        ) : <div className="spinner">
+            <h4>Loading...</h4>
+            <Spinner  animation="grow" />
+            </div>}
       </div>
       <ReactPaginate
         breakLabel=""
