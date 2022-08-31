@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import PolarChart from "../../components/PolarChart";
+import { Doughnut } from "react-chartjs-2";
+import DoughnutChart from "../../components/DoughnutChart";
 import "./styles.css";
 
 function Metrics(props) {
@@ -66,7 +67,7 @@ function Metrics(props) {
   return (
     <div className="chart-country-container">
       <h1>Country Chart</h1>
-      <PolarChart chartData={countryData} />
+      <DoughnutChart chartData={countryData} />
     </div>
   );
 }
