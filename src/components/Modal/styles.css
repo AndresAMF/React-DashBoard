@@ -48,11 +48,10 @@
 }
 button {
   margin: 5px;
-
-  
 }
 .button-info {
   background-color: #262a41;
+  margin-left: 0px;
 }
 .button-info:hover{
   background-color: #556c8d;
@@ -60,3 +59,15 @@ button {
 .button-close{
   background-color: #262a41;;
 }
+.modal-dialog{
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 451px){
+  .modal-content{
+    width: 25em;
+    
+  }
+}
+

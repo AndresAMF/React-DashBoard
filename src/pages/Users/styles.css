@@ -8,7 +8,7 @@
 }
 .dashboard-content-container {
   margin: 1em;
-  background-color: #f7f7ff;
+  background-color: #ebebff;
   border: none;
   border-radius: 10px;
   padding: 1em;
@@ -27,7 +27,7 @@
   margin-top: auto;
   margin-bottom: auto;
   color: #262a41;
-  font-size: xx-large;
+  font-size: 2em;
   font-weight: 700;
 }
 .dashboard-content-search {
@@ -114,15 +114,6 @@ a {
 a:hover {
   color: white;
 }
-.empty-table {
-  margin: 0px;
-  font-size: 1rem;
-  line-height: 1.25;
-  letter-spacing: 0.035em;
-  color: gray;
-  font-weight: 700;
-  border-color: #ffffff;
-}
 .card-container {
   display: flex;
   flex-direction: row;
@@ -156,4 +147,70 @@ a:hover {
 }
 address {
   width: auto;
+}
+p{
+  margin: 0px;
+}
+
+
+@media (max-width: 451px){
+  .dashboard-content{
+    width: auto;
+  }
+  .card-contact{
+    flex-direction: column;
+    align-items: center;
+  }
+  .dashboard-content-container{
+    margin: 0.5em;
+    padding: 0.5em;
+    width: auto;
+  }
+  .dashboard-content-header h2{
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 0.5em;
+  }
+ .dashboard-content-header{
+  justify-content: space-evenly;
+  flex-direction: column;
+  }
+  .dashboard-content-search{
+    justify-content: center;
+  }
+  .dashboard-content-input{
+    width: 100%;
+  }
+  .dashboard-content-avatar{
+    margin: 0.5em;
+  }
+  .card-container{
+    margin: 0.5em;
+    padding: 0.25em;
+    flex-direction: column;
+  }
+  .contacts-element{
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  p{
+    margin: 0px;
+    font-size: 0.9em;
+  }
+  .pagination .page-num{
+    padding: 4px 7px;
+  }
+  .card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  address{
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px){
+  
 }

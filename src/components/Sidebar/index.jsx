@@ -28,7 +28,7 @@ function SideBar({ menu }) {
           <h3 className="sidebar-title-name">Camilo</h3>
         </div>
 
-        <div className="sidebar-container">
+        {/* <div className="sidebar-container"> */}
           <div className="sidebar-items">
             {menu.map((item, index) => (
               <div key={index} onClick={() => navigate(item.id)}>
@@ -36,7 +36,7 @@ function SideBar({ menu }) {
               </div>
             ))}
           </div>
-        </div>
+        {/* </div> */}
       </div>
     </nav>
   );

@@ -65,18 +65,18 @@ function More({
             <div className="contacts-container">
               <div className="contacts-element">
                 <FontAwesomeIcon className="contacts-icon" icon={faEnvelope} />
-                {email}
+                <p>{email}</p>
               </div>
               <div className="contacts-element">
                 <FontAwesomeIcon className="contacts-icon" icon={faPhone} />
-                {phone}
+                <p>{phone}</p>
               </div>
               <div className="contacts-element">
                 <FontAwesomeIcon
                   className="contacts-icon"
                   icon={faMobileScreen}
                 />
-                {cell}
+                <p>{cell}</p>
               </div>
             </div>
           </div>

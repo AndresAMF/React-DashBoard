@@ -14,7 +14,7 @@ export default function Users(props) {
   const [users, setUsers] = useState([]);
   const [pageCount, setPageCount] = useState(0);
   const [itemOffset, setItemOffset] = useState(0);
-  const itemsPerPage = 3;
+  const itemsPerPage = 5;
 
   useEffect(() => {
     const endOffset = itemOffset + itemsPerPage;
@@ -93,14 +93,14 @@ export default function Users(props) {
                         className="contacts-icon"
                         icon={faEnvelope}
                       />
-                      {user.email}
+                      <p>{user.email}</p>
                     </div>
                     <div className="contacts-element">
                       <FontAwesomeIcon
                         className="contacts-icon"
                         icon={faPhone}
                       />
-                      {user.phone}
+                      <p>{user.phone}</p>
                     </div>
                     <Modal
                       name={user.name}
@@ -123,7 +123,7 @@ export default function Users(props) {
         breakLabel=""
         nextLabel=">"
         onPageChange={handlePageClick}
-        pageRangeDisplayed={2}
+        pageRangeDisplayed={1}
         pageCount={pageCount}
         previousLabel="<"
         renderOnZeroPageCount={null}
