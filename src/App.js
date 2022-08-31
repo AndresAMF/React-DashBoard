@@ -22,7 +22,7 @@ function App() {
       const results = response.results;
       setData(results);
     };
-    fetchData();
+    fetchData(); 
   }, []);
 
   return (
